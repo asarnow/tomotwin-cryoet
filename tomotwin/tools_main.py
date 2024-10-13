@@ -24,6 +24,7 @@ from tomotwin.modules.tools.median_embedding import MedianTool
 from tomotwin.modules.tools.scale_coordinates import ScaleCoordinates
 from tomotwin.modules.tools.tomotwintool import TomoTwinTool
 from tomotwin.modules.tools.umap import UmapTool
+from tomotwin.modules.tools.umap import PcaTool
 
 
 def get_tool_list() -> List[TomoTwinTool]:
@@ -37,6 +38,7 @@ def get_tool_list() -> List[TomoTwinTool]:
     tools.append(ScaleCoordinates())
     tools.append(ExtractReference())
     tools.append(UmapTool())
+    tools.append(PcaTool())
     tools.append(Info())
     tools.append(MedianTool())
     tools.append(FilterTool())
